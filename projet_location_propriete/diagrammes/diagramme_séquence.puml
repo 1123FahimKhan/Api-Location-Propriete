@@ -1,0 +1,37 @@
+@startuml
+actor Client
+participant "AuthentificationService" as Auth
+participant "LocationService" as Location
+participant "ReservationService" as Reservation
+participant "PaiementService" as Paiement
+participant "NotificationService" as Notification
+
+' Connexion et authentification
+Client -> Auth : seConnecter(email, motDePasse)
+Auth --> Client : succès (token)
+
+' Recherche de locations
+Client -> Location : rechercherLocation(ville, dates)
+Location --> Client : liste des locations disponibles
+
+' Demande de réservation
+Client -> Reservation : reserverLocation(idLocation, dateDebut, dateFin, token)
+Reservation -> Auth : verifierToken(token)
+Auth --> Reservation : valide
+
+Reservation -> Location : verifierDisponibilite(idLocation, dateDebut, dateFin)
+Location --> Reservation : disponible
+
+' Paiement
+Reservation -> Paiement : effectuerPaiement(montant, moyenPaiement)
+Paiement --> Reservation : paiementOK
+
+' Mise à jour de la réservation
+Reservation -> Reservation : statut = "Confirmée"
+
+' Confirmation envoyée
+Reservation -> Notification : envoyerConfirmation(Client, details)
+Notification --> Client : email + notification mobile
+
+Reservation --> Client : confirmationReservation(code=200, details)
+@enduml

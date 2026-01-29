@@ -1,0 +1,61 @@
+@startuml
+skinparam handwritten false
+skinparam componentStyle uml2
+
+title Diagramme de composants - API REST de Locations
+
+component "Application cliente" as ClientApp
+
+package "API REST de Location" {
+
+    package "Couche interface" as InterfaceLayer {
+        component Routeurs {
+            interface "LocationRouteur" as IRL
+            interface "ReservationRouteur" as IRR
+            interface "PaiementRouteur" as IRP
+        }
+        component ModèlesRéponses {
+            interface "LocationResponse" as ILR
+            interface "ReservationResponse" as IRSR
+            interface "PaiementResponse" as IPR
+        }
+    }
+
+    package "Couche métier" as BusinessLayer {
+        component Services {
+            interface "LocationService" as ISL
+            interface "ReservationService" as ISR
+            interface "UserService" as ISU
+        }
+        component Modèle {
+            interface "Utilisateur / Client / Propriétaire" as IMU
+            interface "Location" as IML
+            interface "Réservation" as IMR
+            interface "Paiement" as IMP
+        }
+    }
+
+    package "Couche d'accès aux données" as DataAccessLayer {
+        component DAO {
+            interface "UserDAO" as IDU
+            interface "LocationDAO" as IDL
+            interface "ReservationDAO" as IDR
+            interface "PaiementDAO" as IDP
+        }
+    }
+}
+
+database "Base de données" as DB
+
+ClientApp -> Routeurs : Requêtes HTTP (GET, POST, etc.)
+
+Routeurs --> ModèlesRéponses : Sérialisation JSON, Conversion en objets de sortie
+
+ModèlesRéponses --> Services : Appels métier (Validation, Logique)
+
+Services --> DAO : Requêtes de données
+
+Services --> Modèle : Manipule les objets métier (Entités)
+
+DAO --> DB : Opérations CRUD
+@enduml

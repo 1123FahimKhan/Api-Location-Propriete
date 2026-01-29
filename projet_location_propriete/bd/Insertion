@@ -1,0 +1,32 @@
+INSERT INTO Utilisateur (id, nom, email) VALUES
+(101, 'Seraphin', 'seraphin.c@email.com'),
+(102, 'Sett', 'sett.c@email.com'),
+(103, 'Hwei', 'hwei.c@email.com'),
+(201, 'Mike', 'mike.p@email.com'),
+(202, 'Monti', 'monti.p@email.com'),
+(301, 'Admin Joe', 'admin.joe@email.com'),
+(401, 'Gwen', 'gwen.u@email.com');
+
+INSERT INTO Propriétaire (id,nom) VALUES
+(201,'Mike'),
+(202, 'Monti');
+
+INSERT INTO Client (id, nom) VALUES
+(101, 'Seraphin'),
+(102,'Sett'),
+(103, 'Hwei');
+
+INSERT INTO Location (id, titre, description, adresse, prixParNuit, disponibilite, proprietaire_id) VALUES
+(1, 'Studio Cosy Centre Ville', 'Petit studio confortable et bien situé.', '123 Rue Principale, Montréal', 100.00, 'Disponible', 201),
+(2, 'Appartement Familial', 'Grand appartement avec 3 chambres.', '456 Avenue des Roses, Québec', 250.00, 'Disponible', 201),
+(3, 'Chalet Montagne', 'Chalet rustique pour escapade en nature.', '789 Chemin des Bois, Laurentides', 150.00, 'Indisponible', 202),
+(4, 'Loft Moderne', 'Loft spacieux avec vue imprenable.', '101 Boulevard du Fleuve, Montréal', 180.00, 'Disponible', 202);
+
+INSERT INTO Réservation (id, dateDébut, dateFin, statut, montantTotal, client_id, location_id) VALUES
+(10, '2025-12-01', '2025-12-05', 'Confirmée', 400.00, 101, 1),
+(11, '2026-01-10', '2026-01-12', 'Confirmée', 500.00, 102, 2),
+(12, '2025-11-20', '2025-11-22', 'En attente de paiement', 360.00, 103, 4);
+
+INSERT INTO Paiement (id, montant, datePaiement, moyenPaiement, reservation_id) VALUES
+(100, 400.00, '2025-10-15', 'Carte Bancaire', 10),
+(101, 500.00, '2025-10-20', 'PayPal', 11);

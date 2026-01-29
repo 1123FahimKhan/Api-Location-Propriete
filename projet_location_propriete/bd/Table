@@ -1,0 +1,57 @@
+DROP TABLE IF EXISTS Paiement;  
+DROP TABLE IF EXISTS Réservation;  
+DROP TABLE IF EXISTS Location;  
+DROP TABLE IF EXISTS Client;  
+DROP TABLE IF EXISTS Propriétaire;  
+DROP TABLE IF EXISTS Utilisateur;  
+
+CREATE TABLE Utilisateur (
+    id INT PRIMARY KEY NOT NULL,
+    nom VARCHAR(100),
+    email VARCHAR(100)
+);
+
+CREATE TABLE Propriétaire (
+    id INT PRIMARY KEY NOT NULL,
+    nom VARCHAR(100),
+    FOREIGN KEY (id) REFERENCES Utilisateur(id)
+);
+
+CREATE TABLE Client (
+    id INT PRIMARY KEY NOT NULL,
+    nom VARCHAR(100),
+    FOREIGN KEY (id) REFERENCES Utilisateur(id)
+);
+
+CREATE TABLE Location (
+    id INT PRIMARY KEY NOT NULL,
+    titre VARCHAR(100),
+    description TEXT,
+    adresse VARCHAR(255),
+    prixParNuit FLOAT,
+    disponibilite VARCHAR(50),
+    proprietaire_id INT,
+    FOREIGN KEY (proprietaire_id) REFERENCES Propriétaire(id)
+);
+
+CREATE TABLE Réservation (
+    id INT PRIMARY KEY NOT NULL,
+    dateDébut DATE,
+    dateFin DATE,
+    statut VARCHAR(50),
+    montantTotal FLOAT,
+    client_id INT,
+    location_id INT,
+    FOREIGN KEY (client_id) REFERENCES Client(id),
+    FOREIGN KEY (location_id) REFERENCES Location(id)
+);
+
+CREATE TABLE Paiement (
+    id INT PRIMARY KEY NOT NULL,
+    montant FLOAT,
+    datePaiement DATE,
+    moyenPaiement VARCHAR(50),
+    reservation_id INT,
+    FOREIGN KEY (reservation_id) REFERENCES Réservation(id)
+);
+

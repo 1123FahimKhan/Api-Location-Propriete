@@ -1,0 +1,53 @@
+
+@startuml
+class Utilisateur {
+  +id: int
+  +nom: string
+  +email: string
+}
+ 
+class Propriétaire {
+  +id: int
+  +nom: string
+}
+Utilisateur <|-- Propriétaire
+ 
+class Client {
+  +id: int
+  +nom: string
+}
+Utilisateur <|-- Client
+ 
+class Location {
+  +id: int
+  +titre: string
+  +description: string
+  +adresse: string
+  +prixParNuit: float
+  +disponibilite: string
+  +proprietaire_id: int
+}
+ 
+class Réservation {
+  +id: int
+  +dateDébut: date
+  +dateFin: date
+  +statut: string
+  +montantTotal: float
+  +client_id: int
+  +location_id: int
+}
+ 
+class Paiement {
+  +id: int
+  +montant: float
+  +datePaiement: date
+  +moyenPaiement: string
+  +reservation_id: int
+}
+ 
+Propriétaire "1" -- "0..*" Location
+Client "1" -- "0..*" Réservation
+Location "1" -- "0..*" Réservation
+Réservation "1" -- "1" Paiement
+@enduml

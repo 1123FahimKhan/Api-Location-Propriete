@@ -1,0 +1,52 @@
+@startuml
+entity Utilisateur {
+  *id: int <<PK>>
+  nom: string
+  email: string
+}
+
+entity Propriétaire {
+  *id: int <<PK>>
+  nom: string
+}
+
+entity Client {
+  *id: int <<PK>>
+  nom: string
+}
+
+entity Location {
+  *id: int <<PK>>
+  titre: string
+  description: string
+  adresse: string
+  prixParNuit: float
+  disponibilite: string
+  proprietaire_id: int <<FK>>
+}
+
+entity Réservation {
+  *id: int <<PK>>
+  dateDébut: date
+  dateFin: date
+  statut: string
+  montantTotal: float
+  client_id: int <<FK>>
+  location_id: int <<FK>>
+}
+
+entity Paiement {
+  *id: int <<PK>>
+  montant: float
+  datePaiement: date
+  moyenPaiement: string
+  reservation_id: int <<FK>>
+}
+
+Utilisateur ||--o{ Propriétaire
+Utilisateur ||--o{ Client
+Propriétaire ||--o{ Location
+Client ||--o{ Réservation
+Location ||--o{ Réservation
+Réservation ||--|| Paiement
+@enduml

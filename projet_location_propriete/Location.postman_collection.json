@@ -1,0 +1,3359 @@
+{
+	"info": {
+		"_postman_id": "bd12d47d-f74d-4315-9553-09fc0921f03d",
+		"name": "Location",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37983410",
+		"_collection_link": "https://test33-9828.postman.co/workspace/Location-de-Propri%C3%A9t%C3%A9~edeb3841-1ec3-4ad0-a885-86e3d024c298/collection/37983410-bd12d47d-f74d-4315-9553-09fc0921f03d?action=share&source=collection_link&creator=37983410"
+	},
+	"item": [
+		{
+			"name": "Admin Joe (Admin)",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Chalet au bord du lac\",\n    \"description\": \"Vue magnifique sur le lac\",\n    \"adresse\": \"45 Chemin du Lac\",\n    \"ville\": \"Québec\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 150,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 6,\n    \"type\": \"Chalet\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}} ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}} "
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/users/2/locations/3",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/users/2/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Appartement sous sol\",\r\n    \"description\": \"Prix modique, 1 personne seulement\",\r\n    \"adresse\": \"4242 Rue des Lilas\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 20,\r\n    \"disponibilite\": \"Occupé\",\r\n    \"capacite\": 1,\r\n    \"type\": \"Appartement\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/users/2/locations/6",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/users/2/locations/6",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"6"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 6,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 120,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 3,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/6",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/6",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 6,\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Vue extraordinaire sur la ville\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 160,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}"
+								},
+								{
+									"name": "/locations/5",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 5,\r\n    \"titre\": \"Maison en pierre\",\r\n    \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\r\n    \"adresse\": \"4 rand no.8\",\r\n    \"ville\": \"Lac-du-milieu\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 320,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"id\": 5,\r\n    \"id_utilisareur\": 5,\r\n    \"titre\": \"maison bob\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"105 Rue beauvoir\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"maison\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}} ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}} "
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/users/3/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"id_utilisareur\": 3,\r\n  \"titre\": \"Loft moderne rénové\",\r\n  \"description\": \"Nouvellement rénové, proche métro\",\r\n  \"adresse\": \"85 Rue de la Concorde\",\r\n  \"ville\": \"Montréal\",\r\n  \"pays\": \"Canada\",\r\n  \"prixParNuit\": 290,\r\n  \"disponibilite\": \"Disponible\",\r\n  \"capacite\": 2,\r\n  \"type\": \"Loft\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/users/3/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"3",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"85 Rue de la Concorde\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 290,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 2,\r\n    \"type\": \"Loft\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gwen (Utilisateur non identifier)",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\r\n    {\r\n        \"id\": 1,\r\n        \"id_utilisareur\": 3,\r\n        \"titre\": \"Appartement cosy\",\r\n        \"description\": \"Proche du centre-ville\",\r\n        \"adresse\": \"123 Rue Principale\",\r\n        \"ville\": \"Montréal\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 85,\r\n        \"disponibilite\": \"Disponible\",\r\n        \"capacite\": 2,\r\n        \"type\": \"Appartement\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"id_utilisareur\": 12,\r\n        \"titre\": \"Chalet au bord du lac\",\r\n        \"description\": \"Vue magnifique sur le lac\",\r\n        \"adresse\": \"45 Chemin du Lac\",\r\n        \"ville\": \"Québec\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 150,\r\n        \"disponibilite\": \"Disponible\",\r\n        \"capacite\": 6,\r\n        \"type\": \"Chalet\"\r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"id_utilisareur\": 3,\r\n        \"titre\": \"Appartement sous sol\",\r\n        \"description\": \"Prix modique, 1 personne seulement\",\r\n        \"adresse\": \"4242 Rue des Lilas\",\r\n        \"ville\": \"Montréal\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 20,\r\n        \"disponibilite\": \"Occupé\",\r\n        \"capacite\": 1,\r\n        \"type\": \"Appartement\"\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"id_utilisareur\": 2,\r\n        \"titre\": \"Manoir de George Vernon\",\r\n        \"description\": \"Campagne proche du lac Yvar\",\r\n        \"adresse\": \"10 rue norman\",\r\n        \"ville\": \"Rimouski\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 3500,\r\n        \"disponibilite\": \"Disponible\",\r\n        \"capacite\": 10,\r\n        \"type\": \"Manoir\"\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"id_utilisareur\": 5,\r\n        \"titre\": \"Maison en pierre\",\r\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\r\n        \"adresse\": \"4 rand no.8\",\r\n        \"ville\": \"Lac-du-milieu\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 320,\r\n        \"disponibilite\": \"Disponible\",\r\n        \"capacite\": 4,\r\n        \"type\": \"Maison\"\r\n    },{\r\n        \"id\": 6,\r\n        \"id_utilisareur\": 12,\r\n        \"titre\": \"Loft moderne\",\r\n        \"description\": \"Avec terrasse et belle vue\",\r\n        \"adresse\": \"77 Rue Sainte-Catherine\",\r\n        \"ville\": \"Montréal\",\r\n        \"pays\": \"Canada\",\r\n        \"prixParNuit\": 120,\r\n        \"disponibilite\": \"Disponible\",\r\n        \"capacite\": 3,\r\n        \"type\": \"Loft\"\r\n    }\r\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 1,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Appartement cosy\",\r\n    \"description\": \"Proche du centre-ville\",\r\n    \"adresse\": \"123 Rue Principale\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 85,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 2,\r\n    \"type\": \"Appartement\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{userid}}/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/users/{{userid}}/locations/{{id}}",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/users/2/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 3,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement sous sol\",\n    \"description\": \"Prix modique, 1 personne seulement\",\n    \"adresse\": \"4242 Rue des Lilas\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 20,\n    \"disponibilite\": \"Occupé\",\n    \"capacite\": 1,\n    \"type\": \"Appartement\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"name\": \"tokenInvalid\",\n        \"message\": \"Erreur la commande suivante : POST {{url}}/locations est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. The following command: POST {{url}}/locations is invalid because the authentication token is invalid. Please check your token and try again.\",\n        \"header\": \"Pas authentifier, not authenticate\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Loft\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"tokenInvalid\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. The following command: PUT {{url}}/locations/3 is invalid because the authentication token is invalid. Please check your token and try again.\",\r\n        \"header\": \"Pas authentifier, not authenticate\"\r\n    }\r\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"Logement de vacances\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"458 rue des Lilas\",\r\n    \"ville\": \"Repentigny\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 240,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Logement\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"tokenInvalid\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/2 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. The following command: PUT {{url}}/locations/2 is invalid because the authentication token is invalid. Please check your token and try again.\",\r\n        \"header\": \"Pas authentifier, not authenticate\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/30",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/30",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"30"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"name\": \"tokenInvalid\",\n        \"message\": \"Erreur la commande suivante : DELETE {{url}}/locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. The following command: DELETE {{url}}/locations/3 is invalid because the authentication token is invalid. Please check your token and try again.\",\n        \"header\": \"Pas authentifier, not authenticate\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Seraphin (Client) id : 7",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Chalet au bord du lac\",\n    \"description\": \"Vue magnifique sur le lac\",\n    \"adresse\": \"45 Chemin du Lac\",\n    \"ville\": \"Québec\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 150,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 6,\n    \"type\": \"Chalet\"\n}"
+								}
+							]
+						},
+						{
+							"name": "{{url}}/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{url}}/users/2/locations/3",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/users/2/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Appartement sous sol\",\r\n    \"description\": \"Prix modique, 1 personne seulement\",\r\n    \"adresse\": \"4242 Rue des Lilas\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 20,\r\n    \"disponibilite\": \"Occupé\",\r\n    \"capacite\": 1,\r\n    \"type\": \"Appartement\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 7,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 6,\n    \"id_utilisareur\": 7,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 120,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 3,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/3 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"maison bob\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"105 Rue beauvoir\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}locations/2 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/2 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{userid}}/locations/{{id}} ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{userid}}",
+										"locations",
+										"{{id}} "
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/user/2/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 5,\r\n    \"titre\": \"Maison en pierre\",\r\n    \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\r\n    \"adresse\": \"4 rand no.8\",\r\n    \"ville\": \"Lac-du-milieu\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 320,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/users/2/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/users/2/locations/5 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/users/2/locations/5 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/5",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : DELETE {{url}}/locations/5 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: DELETE {{url}}/locations/5 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hwei (Client) id : 14",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Condo\",\n    \"description\": \"Luxe Condo avec vue panoramique\",\n    \"adresse\": \"515 Rue Davidson\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 250,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								}
+							]
+						},
+						{
+							"name": "{{url}}/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{url}}/users/{{id}}/locations/{{id}}",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/users/2/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Appartement sous sol\",\r\n    \"description\": \"Prix modique, 1 personne seulement\",\r\n    \"adresse\": \"4242 Rue des Lilas\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 20,\r\n    \"disponibilite\": \"Occupé\",\r\n    \"capacite\": 1,\r\n    \"type\": \"Appartement\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 14,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 7,\n    \"id_utilisareur\": 14,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 120,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 3,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/3 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"maison bob\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"105 Rue beauvoir\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/2 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/2 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/9",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"9"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : DELETE {{url}}/locations/9 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: DELETE {{url}}/locations/9 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sett (Client) id : 22",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Chalet au bord du lac\",\n    \"description\": \"Vue magnifique sur le lac\",\n    \"adresse\": \"45 Chemin du Lac\",\n    \"ville\": \"Québec\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 150,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 6,\n    \"type\": \"Chalet\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 22,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 8,\n    \"id_utilisareur\": 22,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 120,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 3,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"titre\": \"Loft moderne rénové\",\r\n  \"description\": \"Nouvellement rénové, proche métro\",\r\n  \"adresse\": \"77 Rue Sainte-Catherine\",\r\n  \"ville\": \"Montréal\",\r\n  \"pays\": \"Canada\",\r\n  \"prixParNuit\": 140,\r\n  \"disponibilite\": \"Disponible\",\r\n  \"capacite\": 4,\r\n  \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/3 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"titre\": \"maison bob\",\r\n  \"description\": \"excellente vue , proche du lac\",\r\n  \"adresse\": \"105 Rue beauvoir\",\r\n  \"ville\": \"Laval\",\r\n  \"pays\": \"Canada\",\r\n  \"prixParNuit\": 140,\r\n  \"disponibilite\": \"Disponible\",\r\n  \"capacite\": 4,\r\n  \"type\": \"maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/2 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/2 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"name\": \"notAuthorized\",\n        \"message\": \"Erreur la commande suivante : DELETE {{url}}/locations/5 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: DELETE {{url}}/locations/5 is invalid because you do not have permissions. Please check your access and try again.\",\n        \"header\": \"Pas autoriser, not allow\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MIke (Propriétaire) id : 3",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Condo\",\n    \"description\": \"Luxe Condo avec vue panoramique\",\n    \"adresse\": \"515 Rue Davidson\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 250,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 250,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 1,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 8,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 250,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 1,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"titre\": \"Loft moderne rénové\",\r\n  \"description\": \"Nouvellement rénové, proche métro\",\r\n  \"adresse\": \"77 Rue Sainte-Catherine\",\r\n  \"ville\": \"Montréal\",\r\n  \"pays\": \"Canada\",\r\n  \"prixParNuit\": 140,\r\n  \"disponibilite\": \"Disponible\",\r\n  \"capacite\": 4,\r\n  \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/3 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/3 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"titre\": \"maison bob\",\r\n  \"description\": \"excellente vue , proche du lac\",\r\n  \"adresse\": \"105 Rue beauvoir\",\r\n  \"ville\": \"Laval\",\r\n  \"pays\": \"Canada\",\r\n  \"prixParNuit\": 140,\r\n  \"disponibilite\": \"Disponible\",\r\n  \"capacite\": 4,\r\n  \"type\": \"maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/locations/2 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/locations/2 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/5",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": {\n        \"name\": \"notAuthorized\",\n        \"message\": \"Erreur la commande suivante : DELETE {{url}}/locations/5 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: DELETE {{url}}/locations/5 is invalid because you do not have permissions. Please check your access and try again.\",\n        \"header\": \"Pas autoriser, not allow\"\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Monti (Propriétaire) id : 12",
+			"item": [
+				{
+					"name": "Get",
+					"item": [
+						{
+							"name": "/locations",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement cosy\",\n        \"description\": \"Proche du centre-ville\",\n        \"adresse\": \"123 Rue Principale\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 85,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 2,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 2,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Chalet au bord du lac\",\n        \"description\": \"Vue magnifique sur le lac\",\n        \"adresse\": \"45 Chemin du Lac\",\n        \"ville\": \"Québec\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 150,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 6,\n        \"type\": \"Chalet\"\n    },\n    {\n        \"id\": 3,\n        \"id_utilisareur\": 3,\n        \"titre\": \"Appartement sous sol\",\n        \"description\": \"Prix modique, 1 personne seulement\",\n        \"adresse\": \"4242 Rue des Lilas\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 20,\n        \"disponibilite\": \"Occupé\",\n        \"capacite\": 1,\n        \"type\": \"Appartement\"\n    },\n    {\n        \"id\": 4,\n        \"id_utilisareur\": 2,\n        \"titre\": \"Manoir de George Vernon\",\n        \"description\": \"Campagne proche du lac Yvar\",\n        \"adresse\": \"10 rue norman\",\n        \"ville\": \"Rimouski\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 3500,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 10,\n        \"type\": \"Manoir\"\n    },\n    {\n        \"id\": 5,\n        \"id_utilisareur\": 5,\n        \"titre\": \"Maison en pierre\",\n        \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\n        \"adresse\": \"4 rand no.8\",\n        \"ville\": \"Lac-du-milieu\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 320,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 4,\n        \"type\": \"Maison\"\n    },{\n        \"id\": 6,\n        \"id_utilisareur\": 12,\n        \"titre\": \"Loft moderne\",\n        \"description\": \"Avec terrasse et belle vue\",\n        \"adresse\": \"77 Rue Sainte-Catherine\",\n        \"ville\": \"Montréal\",\n        \"pays\": \"Canada\",\n        \"prixParNuit\": 120,\n        \"disponibilite\": \"Disponible\",\n        \"capacite\": 3,\n        \"type\": \"Loft\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"id_utilisareur\": 3,\n    \"titre\": \"Appartement cosy\",\n    \"description\": \"Proche du centre-ville\",\n    \"adresse\": \"123 Rue Principale\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 85,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 2,\n    \"type\": \"Appartement\"\n}"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\n    \"id\": 2,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Chalet au bord du lac\",\n    \"description\": \"Vue magnifique sur le lac\",\n    \"adresse\": \"45 Chemin du Lac\",\n    \"ville\": \"Québec\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 150,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 6,\n    \"type\": \"Chalet\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}} ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}} "
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/user/2/locations/3",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/users/2/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Appartement sous sol\",\r\n    \"description\": \"Prix modique, 1 personne seulement\",\r\n    \"adresse\": \"4242 Rue des Lilas\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 20,\r\n    \"disponibilite\": \"Occupé\",\r\n    \"capacite\": 1,\r\n    \"type\": \"Appartement\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "/locations",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"Loft moderne\",\r\n    \"description\": \"Avec terrasse et belle vue\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 120,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 3,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 3,\n    \"id_utilisareur\": 12,\n    \"titre\": \"Loft moderne\",\n    \"description\": \"Avec terrasse et belle vue\",\n    \"adresse\": \"77 Rue Sainte-Catherine\",\n    \"ville\": \"Montréal\",\n    \"pays\": \"Canada\",\n    \"prixParNuit\": 120,\n    \"disponibilite\": \"Disponible\",\n    \"capacite\": 3,\n    \"type\": \"Loft\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Loft\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/3",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"id\": 3,\r\n    \"id_utilisareur\": 3,\r\n    \"titre\": \"Loft moderne rénové\",\r\n    \"description\": \"Nouvellement rénové, proche métro\",\r\n    \"adresse\": \"77 Rue Sainte-Catherine\",\r\n    \"ville\": \"Montréal\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Loft\"\r\n}\r\n"
+								},
+								{
+									"name": "/locations/2",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"maison bob\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"105 Rue beauvoir\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"body": "{\r\n    \"id\": 2,\r\n    \"id_utilisareur\": 12,\r\n    \"titre\": \"maison bob\",\r\n    \"description\": \"excellente vue , proche du lac\",\r\n    \"adresse\": \"105 Rue beauvoir\",\r\n    \"ville\": \"Laval\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 140,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"maison\"\r\n}"
+								}
+							]
+						},
+						{
+							"name": "/users/{{id}}/locations/{{id}}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/{{id}}/locations/{{id}} ",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"{{id}}",
+										"locations",
+										"{{id}} "
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/user/2/locations/3",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id_utilisareur\": 5,\r\n    \"titre\": \"Maison en pierre\",\r\n    \"description\": \"En plein milieu d'une forêt et un joli cours d'eau\",\r\n    \"adresse\": \"4 rand no.8\",\r\n    \"ville\": \"Lac-du-milieu\",\r\n    \"pays\": \"Canada\",\r\n    \"prixParNuit\": 320,\r\n    \"disponibilite\": \"Disponible\",\r\n    \"capacite\": 4,\r\n    \"type\": \"Maison\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/users/2/locations/5",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"users",
+												"2",
+												"locations",
+												"5"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"error\": {\r\n        \"name\": \"notAuthorized\",\r\n        \"message\": \"Erreur la commande suivante : PUT {{url}}/users/2/locations/5 est invalide, car le token d'authentification est invalide. Veuillez vérifier votre token et réessayer. Error: The following command: PUT {{url}}/users/2/locations/5 is invalid because you do not have permissions. Please check your access and try again.\",\r\n        \"header\": \"Pas autoriser, not allow\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "/locations/{{id}}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/locations/{{id}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"locations",
+										"{{id}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "/locations/3",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/locations/2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"locations",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://0605251d-7305-45f1-a2dd-6ec71529da16.mock.pstmn.io"
+		}
+	]
+}

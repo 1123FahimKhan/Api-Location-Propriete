@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "id_utilisareur": 201,
+        "titre": "Appartement cosy",
+        "description": "Proche du centre-ville",
+        "adresse": "123 Rue Principale",
+        "ville": "Montréal",
+        "pays": "Canada",
+        "prixParNuit": 85,
+        "disponibilite": "Disponible",
+        "capacite": 2,
+        "type": "Appartement"
+    },
+    {
+        "id": 2,
+        "id_utilisareur": 201,
+        "titre": "Chalet au bord du lac",
+        "description": "Vue magnifique sur le lac",
+        "adresse": "45 Chemin du Lac",
+        "ville": "Québec",
+        "pays": "Canada",
+        "prixParNuit": 150,
+        "disponibilite": "Disponible",
+        "capacite": 6,
+        "type": "Chalet"
+    },
+    {
+        "id": 3,
+        "id_utilisareur": 201,
+        "titre": "Appartement sous sol",
+        "description": "Prix modique, 1 personne seulement",
+        "adresse": "4242 Rue des Lilas",
+        "ville": "Montréal",
+        "pays": "Canada",
+        "prixParNuit": 20,
+        "disponibilite": "Occupé",
+        "capacite": 1,
+        "type": "Appartement"
+    },
+    {
+        "id": 4,
+        "id_utilisareur": 201,
+        "titre": "Manoir de George Vernon",
+        "description": "Campagne proche du lac Yvar",
+        "adresse": "10 rue norman",
+        "ville": "Rimouski",
+        "pays": "Canada",
+        "prixParNuit": 3500,
+        "disponibilite": "Disponible",
+        "capacite": 10,
+        "type": "Manoir"
+    },
+    {
+        "id": 5,
+        "id_utilisareur": 201,
+        "titre": "Maison en pierre",
+        "description": "En plein milieu d'une forêt et un joli cours d'eau",
+        "adresse": "4 rand no.8",
+        "ville": "Lac-du-milieu",
+        "pays": "Canada",
+        "prixParNuit": 320,
+        "disponibilite": "Disponible",
+        "capacite": 4,
+        "type": "Maison"
+    },
+    {
+        "id": 6,
+        "id_utilisareur": 201,
+        "titre": "Loft moderne",
+        "description": "Avec terrasse et belle vue",
+        "adresse": "77 Rue Sainte-Catherine",
+        "ville": "Montréal",
+        "pays": "Canada",
+        "prixParNuit": 120,
+        "disponibilite": "Disponible",
+        "capacite": 3,
+        "type": "Loft"
+    }
+]

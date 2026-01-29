@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Client
+actor Propriétaire
+
+rectangle "Collection des locations" {
+  (Consulter une location) as UC1
+  (Lister toutes les locations) as UC2
+  (Créer une nouvelle location) as UC3
+  (Mettre à jour une location) as UC4
+  (Supprimer une location) as UC5
+}
+
+Client --> UC1
+Client --> UC2
+
+Propriétaire --> UC1
+Propriétaire --> UC2
+Propriétaire --> UC3
+Propriétaire --> UC4
+Propriétaire --> UC5
+
+UC1 -right-> (GET par id)
+UC2 -right-> (GET)
+UC3 -right-> (POST)
+UC4 -right-> (PUT / PATCH)
+UC5 -right-> (DELETE)
+@enduml
